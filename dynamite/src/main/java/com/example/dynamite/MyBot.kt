@@ -25,6 +25,14 @@ class MyBot : Bot {
             }
         }
 
+        var numberOfMoves = 0
+        for (i in gamestate.rounds) {
+            numberOfMoves ++
+        }
+        if (numberOfMoves < 100) {
+            return Move.D
+        }
+
         // Get all possible moves
         var moves = Move.values().toList()
 
