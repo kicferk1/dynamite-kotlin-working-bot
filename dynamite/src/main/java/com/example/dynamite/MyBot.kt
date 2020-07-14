@@ -25,11 +25,7 @@ class MyBot : Bot {
             }
         }
 
-        var numberOfMoves = 0
-        for (i in gamestate.rounds) {
-            numberOfMoves ++
-        }
-        if (numberOfMoves < 100) {
+        if (gamestate.rounds.size < 100) {
             return Move.D
         }
 
