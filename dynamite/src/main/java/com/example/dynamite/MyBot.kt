@@ -25,6 +25,10 @@ class MyBot : Bot {
             }
         }
 
+        if (gamestate.rounds.size < 100) {
+            return Move.D
+        }
+
         // Get all possible moves
         var moves = Move.values().toList()
 
